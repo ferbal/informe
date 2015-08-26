@@ -15,7 +15,7 @@ public class RegistrarController {
 		return new ModelAndView("registro","command",new Persona());
 	}
 	
-	@RequestMapping("/irRegistrar"), method = {RequestMethod.GET;RequestMethod.POST}
+	@RequestMapping(value = "/irRegistrar", method = {RequestMethod.GET , RequestMethod.POST})
 	public String registrar(Persona per, ModelMap model){
 		model.addAttribute("nombre", per.getNombre());
 		model.addAttribute("apellido", per.getApellido());
@@ -23,5 +23,17 @@ public class RegistrarController {
 		return "saludo";
 	}
 	
+	@RequestMapping("/irFormulario")
+	public ModelAndView irFormulario(){
+		return new ModelAndView("formulario","command",new Persona());
+	}
+	
+	@RequestMapping(value = "/agregar", method = {RequestMethod.GET , RequestMethod.POST})
+	public String agregar(Persona per, ModelMap model){
+		model.addAttribute("nombreModel", per.getNombre());
+		model.addAttribute("apellidoModel", per.getApellido());
+		
+		return "exito";
+	}
 	
 }
