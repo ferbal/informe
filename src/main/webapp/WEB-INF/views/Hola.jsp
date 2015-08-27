@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-	${mensaje}
-	<a href="irRegistrar.html">Registrar</a>
-	<a href="irFormulario.html">Ir a Formulario</a>
+<body>	
+	<a href="irRegistrar.html">Registrar</a><br>
+	<a href="irFormulario.html">Ir a Formulario</a><br>
+	<a href="irExcel.html">Ir a Excel</a><br>
 </body>
 </html>

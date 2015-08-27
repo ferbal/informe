@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Nombre: ${nombreModel} <br>
-	Apellido: ${apellidoModel}
+	La ruta completa es: ${pathModel}\ ${nombreModel}
 </body>
 </html>
